@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+	<script>
+		
+
+		var withDraw;
+
+		function getMoney()	{
+		var withDraw = (prompt("how much do you want to withDraw?"));
+			if(isNaN(withDraw))		{
+			alert("error. please enter a number"); 
+			getMoney();
+									}
+			
+		else{withDraw > 0;
+			var hundred = Math.floor(withDraw/100);
+			document.write("hundred " + hundred)
+			var twenty = Math.floor((withDraw-hundred*100)/20);
+			document.write("<br>");
+			document.write("twenty " + twenty);
+			var ten = Math.floor((withDraw-hundred*100-twenty*20)/10);
+			document.write("<br>");
+			document.write("ten " + ten);
+		
+		}
+			
+		}
+
+		getMoney();
+		
+							
+			
+	</script>
+	
+	
+
+</body>
+</html>
