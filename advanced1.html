@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function timeconvert(){
+			var number = parseInt(prompt("Bitte eine Nummer eingeben"));
+			
+			if (number < 60) {
+				document.write(number + " min <br>");
+
+
+
+			} 
+			else
+			{
+
+			
+				
+			var outputH = Math.floor(number / 60);
+			var outputmin = number - (outputH * 60); 
+
+			document.write(outputH + " stunden und " + outputmin + " min");
+
+}
+
+
+
+		}
+		timeconvert();
+
+
+
+
+
+	</script>
+
+</body>
+</html>
