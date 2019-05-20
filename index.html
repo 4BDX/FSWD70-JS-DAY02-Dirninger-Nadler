@@ -13,10 +13,11 @@
 
 function ageCalculator (){
 	var birth_year=prompt("What is your birth year?");
-	var current_year=prompt("What's the current year?");
+	var current_year= new Date().getFullYear();
+
 	var sum1= current_year-birth_year;
 	var sum2= sum1-1;
-	document.write("You are either " + sum2 + " or " + sum1);
+	document.write("You are either " + sum2 + " or " + sum1 + "....." + current_year + "...-.-");
 }
 
 
@@ -36,4 +37,14 @@ document.write("You will be a "+job_title+ " in "+ location  + " and married to 
 
 } -->
 
-<!-- crystalGazer(); -->
+<!-- crystalGazer(); 
+function ageCalculator (){
+	var birth_year=prompt("What is your birth year?");
+	var current_year=prompt("What's the current year?");
+	var sum1= current_year-birth_year;
+	var sum2= sum1-1;
+	document.write("You are either " + sum2 + " or " + sum1);
+}
+
+
+ageCalculator();-->
