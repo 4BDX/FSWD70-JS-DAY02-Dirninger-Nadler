@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function grades (){
+			var math= parseInt(prompt("Provide your math grade:"));
+			var physic= parseInt(prompt("Provide your physic grade:"));			
+			var english= parseInt(prompt("Provide your english grade:"));
+			var grades= (math) + (physic) + (english);
+			var grades1= grades/3;
+
+			document.write("Sum: " + grades + "<br> Average: " + grades1);
+		}
+
+		grades()
+	</script>
+
+</body>
+</html>
+
+<!--
+Variante1: String in integer umwandeln
+var math1=parseInt(math);
+var physic1=parseInt(physic);
+var english1= parseInt(english);
+var grades= math1 + physic1 + english1; -->
+
+<!-- Variante2:
+	function grades (){
+			var math= prompt("Provide your math grade:");
+			var physic= prompt("Provide your physic grade:");			
+			var english= prompt("Provide your english grade:");
+			var grades= Number(math) + Number(physic) + Number(english);
+			var grades1= grades/3;
+
+			document.write("Sum: " + grades + "<br> Average: " + grades1); 
+-->
